@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navWrapper">
+        <div class="left-side">
+          <div class="linkWrapper">
+            <a a href="home.html"> Home </a>
+          </div>
+
+          <div class="linkWrapper">
+            <a href="https://www.youtube.com/watch?v=BLUkgRAy_Vo">About Me</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="opgglink">
+            <a
+              href="https://www.op.gg/summoners/na/elegant%20princess"
+              target="_blank"
+              >Official OP.GG</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-picture">
+        <div class="name">
+          <h1>Elegant Princess</h1>
+        </div>
+
+        <div class="picture">
+          <img src="images/mythicjinx.png" alt="" />
+        </div>
+      </div>
+
+      <div class="champion-pool">
+        <div class="champ-text">
+          <h1>Champion Mastery:</h1>
+        </div>
+
+        <div class="champions">
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/nami.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 128,117</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/yuumi.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 575,105</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/lulu.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 152,830</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/lux.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 308,957</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/soraka.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 150,622</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/janna.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 124,928</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/karma.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 104,778</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/sona.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 44,003</div>
+            </div>
+          </div>
+
+          <div class="champion">
+            <div
+              class="champion-picture"
+              style="background-image: url(images/seraphine.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/m7.jpg" alt="" />
+              </div>
+
+              <div class="subtitle">Mastery points: 57,148</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>ruby the cum-dumpster</h1>
+    <p>Latest Reviews:</p>
+    <p>
+      Elegant Knight: Elegant Princess' pussy helps Fin jr sleep peacefully at
+      night. 9/10
+    </p>
+
+    <a href="#">Click here to Home</a>
+  </body>
+
+  <script>
+    const championItems = document.querySelectorAll(".champion");
+
+    championItems.forEach((championItem) => {
+      championItem.addEventListener("mouseover", () => {
+        console.log(championItem.childNodes[1].classList);
+        championItem.childNodes[1].classList.add("img-darken");
+      });
+
+      championItem.addEventListener("mouseout", () => {
+        console.log(championItem.childNodes[1].classList);
+        championItem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>

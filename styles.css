@@ -1,0 +1,197 @@
+/* Navigation Bar Styles */
+
+body {
+  margin-right: 0px;
+  width: 100%;
+  height: 100vh;
+  animation: changeBg 20s linear infinite;
+  display: grid;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: 600;
+}
+
+a {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: purple;
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: pink;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: lightskyblue;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: lightyellow;
+  }
+  100% {
+    background-color: lightgreen;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+img {
+  width: 200px;
+  border-radius: 50px;
+  background-size: cover;
+}
+
+p.username {
+  font-weight: bold;
+}
+
+em.username {
+  font-style: normal;
+  font-weight: bold;
+  color: purple;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.navWrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.95em;
+}
+
+.linkWrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.linkWrapper a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5;
+}
+
+.linkWrapper:hover {
+  border-bottom: 2px solid blueviolet;
+}
+
+.linkWrapper a:hover {
+  color: blueviolet;
+}
+
+.opgglink {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5;
+}
+
+.opgglink a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5;
+}
+
+.opgglink:hover {
+  border-bottom: 2px solid purple;
+}
+
+.opgglink a:hover {
+  color: purple;
+}
+
+/* Champ Pool */
+
+.champions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.champion {
+  position: relative;
+}
+
+.champion-picture {
+  height: 270px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: lightskyblue;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightskyblue;
+}
+
+.img-darken {
+  transition: 0.8s;
+  filter: brightness(20%);
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+/* profile picture */
+
+.name {
+  text-align: center;
+}
+
+.picture {
+  justify-content: center;
+  display: flex;
+}
+
+.champ-text {
+  text-align: center;
+}
